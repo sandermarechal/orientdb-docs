@@ -44,7 +44,7 @@ For Linux and Unix distributions that rely on `init`, copy the edited system dae
 
 ```sh
 $ cp $ORIENTDB_HOME/bin/orientdb.sh /etc/init.d/orientdb
-$ cp $ORIENTDB_HOME/bin/console.sh /usr/bin/orientdb
+$ ln -s $ORIENTDB_HOME/bin/console.sh /usr/bin/orientdb
 ```
 
 Doing this makes the script accessible to `service` command.  You can now start the database server using the following command:
